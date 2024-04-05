@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<hmtl>
+
+
+<head>
+    <meta charset="utf-8">
+    <title>Conversor Monetario</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+
+<body>
+    
+    <div class="banner">
+        <div class="background-image">
+        <div class="text-overlay">
+            <h1>CONVERSOR MONETÁRIO</h1>
+        </div>
+        </div>
+    </div>   
+    
+    <br><br><br><br><br><br><br><br>
+
+    <div class="divider"></div>
+
+    <div class="content-container">
+        <div class="content">
+            <h2>INTRODUÇÃO</h2>
+            <p style="text-align:justify;">Explore uma maneira rápida e confiável de converter moedas globais com nosso conversor online. Com uma API atualizada em tempo real, oferecemos resultados precisos e imediatos para suas necessidades cambiais.</p>
+            <p style="text-align:justify;">Simplifique suas transações internacionais com apenas alguns cliques. Experimente agora!</p>
+        </div>
+
+        <div class="middle-content">
+            <h2>CONVERSÃO DE MOEDA</h2>
+            <p style="text-align: justify;">Explore nossa calculadora de conversão de moedas para facilitar transações internacionais. Converta instantaneamente entre diferentes moedas com precisão e facilidade.</p>
+        <p> <input type="number" id="amount" placeholder="Insira o valor">
+            <label for="from">de:</label>
+            <select id="from">
+                <!-- Options will be added dynamically via JavaScript -->
+            </select>para
+            <select id="to">
+                <!-- Options will be added dynamically via JavaScript -->
+            </select> <button onclick="convertCurrency()">Converter</button></p>
+            <div id="result"></div></p> 
+
+
+        </div>
+
+        <div class="middle-content">
+            <h2>CONVERSÃO DE CUSTO</h2>
+            <p style="text-align:justify;">Veja quanto falta para terminar uma transação em qualquer moeda.</p>
+
+           <p>Você deve: <input type="number" id="oweCurrency" placeholder="Insira o valor">
+            <select id="owe">
+                <!-- Options will be added dynamically via JavaScript -->
+            </select></p> 
+
+
+           <p>Você pagou: <input type="number" id="paidCurrency" placeholder="Insira o valor">
+            <select id="paid">
+                <!-- Options will be added dynamically via JavaScript -->
+            </select></p>
+
+
+           <p>Calcular a falta em:<select id="missing">
+                <!-- Options will be added dynamically via JavaScript -->
+            </select><button onclick="calCurrency()">Calcular</button></p>
+            <div id="result2"></div></p> 
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</hmtl>
